@@ -1,0 +1,94 @@
+[
+  {
+    "variant": "w0",
+    "games": 288,
+    "maps": 12,
+    "inner_death_pct": 95.43,
+    "outer_death_pct": 71.06,
+    "ratio": 1.343,
+    "inner_win_pct": 15.62,
+    "tiebreak_pct": 41.32,
+    "drown_total": 0,
+    "dead_by_seat": {
+      "0": 661,
+      "1": 827,
+      "2": 822,
+      "3": 567
+    },
+    "wins_by_seat": {
+      "0": 94,
+      "1": 24,
+      "2": 21,
+      "3": 149
+    }
+  },
+  {
+    "variant": "w1",
+    "games": 288,
+    "maps": 12,
+    "inner_death_pct": 89.7,
+    "outer_death_pct": 59.55,
+    "ratio": 1.506,
+    "inner_win_pct": 11.46,
+    "tiebreak_pct": 53.82,
+    "drown_total": 0,
+    "dead_by_seat": {
+      "0": 564,
+      "1": 779,
+      "2": 771,
+      "3": 465
+    },
+    "wins_by_seat": {
+      "0": 105,
+      "1": 19,
+      "2": 14,
+      "3": 150
+    }
+  },
+  {
+    "variant": "w2",
+    "games": 288,
+    "maps": 12,
+    "inner_death_pct": 90.39,
+    "outer_death_pct": 26.1,
+    "ratio": 3.463,
+    "inner_win_pct": 3.47,
+    "tiebreak_pct": 77.78,
+    "drown_total": 0,
+    "dead_by_seat": {
+      "0": 262,
+      "1": 784,
+      "2": 778,
+      "3": 189
+    },
+    "wins_by_seat": {
+      "0": 122,
+      "1": 1,
+      "2": 9,
+      "3": 152
+    }
+  },
+  {
+    "variant": "w3",
+    "games": 288,
+    "maps": 12,
+    "inner_death_pct": 85.3,
+    "outer_death_pct": 60.42,
+    "ratio": 1.412,
+    "inner_win_pct": 18.75,
+    "tiebreak_pct": 56.25,
+    "drown_total": 0,
+    "dead_by_seat": {
+      "0": 559,
+      "1": 732,
+      "2": 742,
+      "3": 485
+    },
+    "wins_by_seat": {
+      "0": 100,
+      "1": 26,
+      "2": 28,
+      "3": 134
+    }
+  }
+]

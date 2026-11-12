@@ -1,0 +1,23 @@
+Aesolumitria-ai-arena
+Copyright 2026 Aesolumitria-Lab
+
+This product is licensed under the Apache License, Version 2.0.
+See LICENSE for the full license text.
+
+Attribution / inspiration:
+- chen-006/meow-ai-arena (MIT) — https://github.com/chen-006/meow-ai-arena
+  The problem-bank design follows some high-level ideas from that project
+  (single-shot model submissions, hidden anchors, large match counts).
+  Game rules, engines, maps, tools, and prompts in this repository are
+  original work unless otherwise noted.
+
+Third-party components remain under their own licenses. When a contestant
+package includes benchmark bots, they are distributed under Apache-2.0
+together with their provenance:
+
+- Public baselines (TIDE tide_easy / tide_normal / tide_hard; random4):
+  precompiled binaries under public/baselines/bin/.
+- Challenge bots (CHIMERA / PSEUDO / TYPHON): precompiled binaries under
+  public/challenges/bin/.
+
+Source code for these bots is not included in contestant packages.

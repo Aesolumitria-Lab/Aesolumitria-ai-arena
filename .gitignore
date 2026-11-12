@@ -1,0 +1,24 @@
+# build outputs
+build/
+dist/
+__pycache__/
+*.pyc
+*.o
+*.obj
+/results/
+
+# Private problem content (hidden maps, anchor / baseline / challenge sources).
+# It lives outside this repository and is linked in locally by tools/link_private.py.
+problems/*/private
+problems/*/review
+
+# Bot binaries are build artifacts under problems/; they ship in packages/ instead.
+problems/*/public/baselines/bin/
+problems/*/public/challenges/bin/
+*.exe
+!packages/**/*.exe
+
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

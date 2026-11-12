@@ -1,0 +1,48 @@
+{
+  "maps": [
+    "public4-01",
+    "public4-02",
+    "public4-03",
+    "public4-04",
+    "public4-05",
+    "public4-06",
+    "public4-07",
+    "public4-08"
+  ],
+  "bot": "typhon.exe",
+  "designs": {
+    "S shared seed (old format)": {
+      "multi_seat_maps": 0,
+      "of_maps": 8,
+      "seat_share": [
+        75.0,
+        0.0,
+        0.0,
+        25.0
+      ],
+      "games": 192
+    },
+    "P 24 perms, own seed": {
+      "multi_seat_maps": 8,
+      "of_maps": 8,
+      "seat_share": [
+        44.3,
+        5.2,
+        5.7,
+        44.8
+      ],
+      "games": 192
+    },
+    "P2 24 perms x 2 seed": {
+      "multi_seat_maps": 8,
+      "of_maps": 8,
+      "seat_share": [
+        46.6,
+        6.2,
+        6.8,
+        40.4
+      ],
+      "games": 384
+    }
+  }
+}

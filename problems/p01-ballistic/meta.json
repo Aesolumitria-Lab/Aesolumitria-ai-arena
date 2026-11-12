@@ -1,0 +1,169 @@
+{
+  "id": "p01-ballistic",
+  "title": "BALLISTIC · 弹道虫",
+  "version": "2.4.3",
+  "family": "worms",
+  "mode": "2-4 FFA",
+  "seats": 4,
+  "max_seats": 4,
+  "legacy_two_seat": true,
+  "turn_ms": 50,
+  "first_turn_ms": 2000,
+  "max_steps": 40,
+  "rounds_per_match": 2,
+  "rounds_per_match4": 48,
+  "partial_observability": false,
+  "deterministic": true,
+  "difficulty": 3,
+  "difficulty_note": "人工排序标签 1-5，不是 TIDE 档位、也不是验收项：没有任何工具读取或校验它（全仓库 *.py 检索 difficulty = 0 命中）。与 TIDE 三档无关 —— 那三档是评分基准的强度档（easy/normal/hard），本字段是题库内的相对难度序。截至 2026-11-10 仍无标定方法学，见 docs/known-issues.md。",
+  "status": "playtest",
+  "answer_time_limit_minutes": 90,
+  "answer_time_limit_scope": "AI build/debug wall clock; harness-enforced; match runtime separate",
+  "package_revision": "2026-11-12",
+  "map_set_revision": "2026-11-10-types-2axis-dedup",
+  "license": "Apache-2.0",
+  "copyright": "2026 Aesolumitria-Lab",
+  "rules_hash": "sha256:69b534be9e0edc3a",
+  "engine_hash": "sha256:d864692e4c9ab0b6",
+  "anchors": [
+    "random",
+    "greedy",
+    "scripted"
+  ],
+  "public_dir": "public",
+  "private_dir": "private",
+  "hidden_maps": 3,
+  "public_maps": 3,
+  "public_maps4": 108,
+  "hidden_maps4": 108,
+  "anchors4": [
+    "random4",
+    "greedy4",
+    "scripted4",
+    "strong4"
+  ],
+  "tags": [
+    "ballistic",
+    "destructible-terrain",
+    "fixed-point",
+    "turn-based",
+    "multiplayer"
+  ],
+  "baselines4": [
+    "tide_easy",
+    "tide_normal",
+    "tide_hard"
+  ],
+  "challenges4": [
+    "chimera",
+    "pseudo",
+    "typhon"
+  ],
+  "legacy_anchors4": [
+    "random4",
+    "greedy4",
+    "scripted4",
+    "strong4"
+  ],
+  "bot_ladder": {
+    "baseline": [
+      "tide_easy",
+      "tide_normal",
+      "tide_hard"
+    ],
+    "challenge": [
+      "chimera",
+      "pseudo",
+      "typhon"
+    ],
+    "target": "tide_normal",
+    "challenge_required": false
+  },
+  "map_layout": "mirror4+types",
+  "map_fairness": "mirror symmetric 0<3 / 1<2; four equal heights / equal gaps / equal edge margins per elevation level",
+  "match_format4": "24 seat permutations (6 circular orders x 4 rotations) x 2 seeds; seed varies per permutation",
+  "fault_semantics": "simultaneous move conflicts are NOT faults (RULES 6.4)",
+  "turn_budget": {
+    "ref_ms": 50,
+    "formula": "turn_budget_ms = 50 * s * c(jobs), c = min(1.75, 1 + 0.03*(jobs-1)), c = 1 when jobs <= 1 (see concurrency.factor)",
+    "landmark": {
+      "host": "Intel Core i9-14900HX (8P+16E, 32 threads), Windows, MinGW g++ 16.1 (reference host, s = 1.0)",
+      "cpu": "Intel Core i9-14900HX",
+      "os": "Windows",
+      "bot": "TIDE-NORMAL",
+      "map": "public4-01",
+      "method": "tools/p01_calibrate.py, 32 fixed positions x 40 repeats, median per-turn CPU",
+      "ref_median_ms": 3.906,
+      "ref_p95_ms": 4.688,
+      "measured_at": "2026-11-09",
+      "confirmed_at": "2026-11-10"
+    },
+    "env_var": "P01_TURN_SCALE",
+    "cli_flag": "--turn-scale",
+    "rank_host_requirement": {
+      "physical_cores_min": 8,
+      "exclusive": true,
+      "p95_over_median_max": 1.3,
+      "note": "scalar scaling restores speed, not jitter; see RULES 15.2"
+    },
+    "concurrency": {
+      "method": "24 seat permutations x 6 seeds = 144 games/level, 4 identical bots, public4-01; wall_allow_s = 0.25*(jobs-1)",
+      "tide_hard": {
+        "jobs": 24,
+        "games_per_s": 28.65,
+        "cpu_mean_ms": 8.27,
+        "cpu_mean_ms_at_jobs1": 5.03,
+        "wall_p99_ms": 18.9,
+        "faults": 0
+      },
+      "typhon": {
+        "safe_jobs": 20,
+        "games_per_s": 6.6,
+        "cpu_mean_ms": 27.53,
+        "cpu_p99_ms": 46.88,
+        "faults": 0,
+        "throughput_knee_jobs": 24,
+        "cpu_max_ms_at_jobs24": 62.5
+      },
+      "note": "Ranking/mixed heavy bots: jobs<=20 (throughput note only; see docs/crossplatform-and-host-speed.md section 7). The budget itself now compensates for concurrency, see factor below.",
+      "factor": {
+        "formula": "turn_budget_ms = 50 * s * c(jobs); c = min(1.75, 1 + 0.03*(jobs-1)); c = 1 when jobs <= 1",
+        "per_job": 0.03,
+        "cap": 1.75,
+        "c_at": {
+          "1": 1.0,
+          "8": 1.21,
+          "20": 1.57,
+          "24": 1.69,
+          "48": 1.75
+        },
+        "why": "s is calibrated single-process (p01_calibrate.py, jobs=1) but ranking runs at jobs=20; concurrency alone raises per-turn CPU 1.43-1.64x (p01-audit/concurrency_sweep2.log). Constant is deliberately conservative: measured 1.64x at 24 jobs, capped at 1.75x. Without it the effective budget at jobs=20 is ~70% of the single-process figure.",
+        "wired_into": [
+          "judge4.concurrency_factor / turn_budget_ms(jobs)",
+          "selfcheck4 --jobs",
+          "ffa4 Runner(jobs=)",
+          "rating4 --jobs",
+          "validate4 assertions"
+        ]
+      }
+    }
+  },
+  "map_types": {
+    "axes": {
+      "cover": [
+        "bare",
+        "flank",
+        "flank+canopy"
+      ],
+      "elevation": [
+        "mesa",
+        "level",
+        "basin"
+      ]
+    },
+    "combinations": 9,
+    "maps_per_type_per_split": 12,
+    "type_code_in_manifest": "type_code"
+  },
+  "arena_hash": "sha256:64f48732e59bd37f"
+}

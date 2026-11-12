@@ -1,0 +1,24 @@
+# ★ 换行符必须钉死（2026-11-10 加）
+#
+# 仓库跑在 Windows，core.autocrlf=true；没有 .gitattributes 时，同样的提交在不同机器上
+# checkout 出来的字节不一样 —— 而 P01 的几条硬约束恰好是【按字节算 sha256】：
+#   · meta.json 的 rules_hash = sha256(RULES.md) 前 16 位
+#   · meta.json 的 engine_hash = sha256(public/engine/engine.cpp) 前 16 位
+#   · meta.json 的 arena_hash  = sha256(public/arena4.hpp) 前 16 位
+#   · maps4/manifest.json 里每张图都带自己的 sha256（validate4 会拿它做内容去重/零重叠断言）
+# 一旦 checkout 出 CRLF，这些 hash 全对不上，acceptance 的 meta 一项会 FAIL，
+# 而「干净 clone 上跑不过」是最难查的一类事故。所以这里统一钉 LF。
+
+* text=auto eol=lf
+
+# 二进制/预编译产物：别让 git 去猜它们是不是文本
+*.exe    binary
+*.png    binary
+*.zip    binary
+*.gz     binary
+*.o      binary
+*.obj    binary
+
+# Linux bot binaries have no extension: never treat them as text
+packages/**/bin/linux/* binary
+problems/**/bin/linux/* binary

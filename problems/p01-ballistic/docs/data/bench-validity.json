@@ -1,0 +1,116 @@
+{
+  "games": 288,
+  "ok": 288,
+  "maps": 6,
+  "seat_wins": {
+    "2": 45,
+    "0": 88,
+    "3": 114,
+    "1": 41
+  },
+  "seat_share_pct": [
+    30.6,
+    14.2,
+    15.6,
+    39.6
+  ],
+  "pooled": {
+    "tide_hard": [
+      133,
+      288
+    ],
+    "tide_normal": [
+      119,
+      288
+    ],
+    "tide_easy": [
+      36,
+      288
+    ],
+    "random4": [
+      0,
+      288
+    ]
+  },
+  "fixed_seat": {
+    "seat0": {
+      "tide_hard": [
+        38,
+        72
+      ],
+      "tide_normal": [
+        37,
+        72
+      ],
+      "tide_easy": [
+        13,
+        72
+      ],
+      "random4": [
+        0,
+        72
+      ]
+    },
+    "seat1": {
+      "tide_hard": [
+        23,
+        72
+      ],
+      "tide_normal": [
+        14,
+        72
+      ],
+      "tide_easy": [
+        4,
+        72
+      ],
+      "random4": [
+        0,
+        72
+      ]
+    },
+    "seat2": {
+      "tide_hard": [
+        21,
+        72
+      ],
+      "tide_normal": [
+        19,
+        72
+      ],
+      "tide_easy": [
+        5,
+        72
+      ],
+      "random4": [
+        0,
+        72
+      ]
+    },
+    "seat3": {
+      "tide_hard": [
+        51,
+        72
+      ],
+      "tide_normal": [
+        49,
+        72
+      ],
+      "tide_easy": [
+        14,
+        72
+      ],
+      "random4": [
+        0,
+        72
+      ]
+    }
+  },
+  "pooled_order": [
+    "tide_hard",
+    "tide_normal",
+    "tide_easy",
+    "random4"
+  ],
+  "order_agrees_across_seats": true
+}

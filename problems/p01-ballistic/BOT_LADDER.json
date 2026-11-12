@@ -1,0 +1,20 @@
+{
+  "package": "p01-ballistic",
+  "version": "2.1.0",
+  "date": "2026-11-06",
+  "target": "tide_normal",
+  "challenge_required": false,
+  "baselines": [
+    {"name": "tide_easy", "profile": 0, "src": "private/baselines_src/tide.cpp", "bin": "build/tide_easy.exe", "sha256": "70037f58a6fe3b8348cba52432c62b31951162a02a99e34e646ca5e3511b0b9d"},
+    {"name": "tide_normal", "profile": 1, "src": "private/baselines_src/tide.cpp", "bin": "build/tide_normal.exe", "sha256": "d59245d405ccd620181977dab59025e9bd6f036d5a100e8c9b29b86d2fff2076"},
+    {"name": "tide_hard", "profile": 2, "src": "private/baselines_src/tide.cpp", "bin": "build/tide_hard.exe", "sha256": "6a2030a150e669a356072408ffdf48b6b238e5af899b80198ef0dd047c5fcf81"}
+  ],
+  "challenges": [
+    {"name": "chimera", "src": "private/challenges4/chimera/chimera.cpp", "bin": "build/chimera.exe", "sha256": "f9165873a290cc98e44e4b8fe9630bd64ad969982aa0a00e3f3d8e779e91b476"},
+    {"name": "pseudo", "src": "private/challenges4/pseudo/source/typhon/submission.cpp", "bin": "build/pseudo.exe", "sha256": "7844a706e5590d7ea01537e0590d384e05089601dcb0fda6fb050ed2a226cd1f"},
+    {"name": "typhon", "src": "private/challenges4/typhon/source/typhon/submission.cpp", "bin": "build/typhon.exe", "sha256": "34e8ba0842d3474925d3b5a1a41865731593eba39a10f31e6bad3afc98b3b149"}
+  ],
+  "legacy_anchors": ["random4", "greedy4", "scripted4", "strong4"],
+  "license": "Apache-2.0",
+  "copyright": "2026 Aesolumitria-Lab"
+}

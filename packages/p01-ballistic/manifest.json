@@ -1,0 +1,718 @@
+{
+  "game": "p01-ballistic",
+  "kind": "contestant",
+  "version": "2.4.3",
+  "license": "Apache-2.0",
+  "copyright": "2026 Aesolumitria-Lab",
+  "rules_hash": "sha256:69b534be9e0edc3a",
+  "engine_hash": "sha256:d864692e4c9ab0b6",
+  "arena_hash": "sha256:64f48732e59bd37f",
+  "generated_by": "tools/pack.py",
+  "files": [
+    {
+      "path": "CONTESTANT_RULES.md",
+      "sha256": "8ded95b50e85b8f81c62095392d9736ab4441d39302a99d99f60e417ce82d49f",
+      "size": 5335
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "98d20fafbe25f1bb7960a7466cd9cf18aa3ae64bdf25e8a272dc99a63d7b702c",
+      "size": 11347
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "b6908dbedafc125c2d751985399525fcfed3b629c00dabc00d686089667118b8",
+      "size": 989
+    },
+    {
+      "path": "README.md",
+      "sha256": "2c1efccb4c77d92adec004e7accddd720f889451d6909dcc1f98cd47603f253d",
+      "size": 5444
+    },
+    {
+      "path": "RULES.md",
+      "sha256": "69b534be9e0edc3a0348d4cf83b170b880cfdc971718aaacc7da5f220d1bfeee",
+      "size": 56951
+    },
+    {
+      "path": "meta.json",
+      "sha256": "4402e0c4568303c750e2f1e324ef6f61ad619888925939d35cc8b9bb2517be10",
+      "size": 5322
+    },
+    {
+      "path": "prompt.md",
+      "sha256": "768e4704dc086a815408e094487d812031053ee2fbaafbb6c6c68675cc0a429d",
+      "size": 4386
+    },
+    {
+      "path": "public/arena4.hpp",
+      "sha256": "64f48732e59bd37fe0709b0446f38903d4422ed33a74d8d500090f42bdccfab9",
+      "size": 14050
+    },
+    {
+      "path": "public/baselines/bin/linux/random4",
+      "sha256": "c465950089a85c033f2c30ad51219145605771dc426354a7973b5a74ea31d088",
+      "size": 2509888
+    },
+    {
+      "path": "public/baselines/bin/linux/tide_easy",
+      "sha256": "791a9cd52020cc62408e359f171c96de6baa585a6d8e0290196fc0a2ef3b228b",
+      "size": 2555992
+    },
+    {
+      "path": "public/baselines/bin/linux/tide_hard",
+      "sha256": "42f56c6274a1c8f1d54d3fb136d4b954779239d8c39fea73d4f7ca0e4903fef8",
+      "size": 2555992
+    },
+    {
+      "path": "public/baselines/bin/linux/tide_normal",
+      "sha256": "5f38a02cd71662a7a26596d334e672783973cbc8a10070e8bf84a3d8866d41c9",
+      "size": 2555992
+    },
+    {
+      "path": "public/baselines/bin/random4.exe",
+      "sha256": "22022bd6c7b34d95f0ebf3a21380ea6245db3c2e4776ef2d327f25a1a29a9b78",
+      "size": 2937749
+    },
+    {
+      "path": "public/baselines/bin/tide_easy.exe",
+      "sha256": "70037f58a6fe3b8348cba52432c62b31951162a02a99e34e646ca5e3511b0b9d",
+      "size": 2987023
+    },
+    {
+      "path": "public/baselines/bin/tide_hard.exe",
+      "sha256": "6a2030a150e669a356072408ffdf48b6b238e5af899b80198ef0dd047c5fcf81",
+      "size": 2987023
+    },
+    {
+      "path": "public/baselines/bin/tide_normal.exe",
+      "sha256": "d59245d405ccd620181977dab59025e9bd6f036d5a100e8c9b29b86d2fff2076",
+      "size": 2987023
+    },
+    {
+      "path": "public/challenges/README.md",
+      "sha256": "76ff73c53fb319f108983fea42dd1f698323ed66195d6245e11398c870b5eee4",
+      "size": 357
+    },
+    {
+      "path": "public/challenges/bin/chimera.exe",
+      "sha256": "f9165873a290cc98e44e4b8fe9630bd64ad969982aa0a00e3f3d8e779e91b476",
+      "size": 3001319
+    },
+    {
+      "path": "public/challenges/bin/linux/chimera",
+      "sha256": "204d23a3b8e91e720971516759407479f17a8a35f78c9adaefeeb5527b7f6bde",
+      "size": 2641504
+    },
+    {
+      "path": "public/challenges/bin/linux/pseudo",
+      "sha256": "edac13ec2d8e43d972e8bbb97b2152cfc9535163031d5b358477677b06fe0cd3",
+      "size": 2775288
+    },
+    {
+      "path": "public/challenges/bin/linux/typhon",
+      "sha256": "d594ec0b9fdde7faa0e475d3742cacd2cb6bbe47f7d5b8330e8fa930bd221cfa",
+      "size": 2788752
+    },
+    {
+      "path": "public/challenges/bin/pseudo.exe",
+      "sha256": "7844a706e5590d7ea01537e0590d384e05089601dcb0fda6fb050ed2a226cd1f",
+      "size": 3143370
+    },
+    {
+      "path": "public/challenges/bin/typhon.exe",
+      "sha256": "34e8ba0842d3474925d3b5a1a41865731593eba39a10f31e6bad3afc98b3b149",
+      "size": 3157118
+    },
+    {
+      "path": "public/engine/engine.cpp",
+      "sha256": "d864692e4c9ab0b641d9518693c9dc301ff8c214c0c3d0c41fbb4b330e932671",
+      "size": 43218
+    },
+    {
+      "path": "public/engine/trig.hpp",
+      "sha256": "866bf8c34aae0e16896d1b906d746b3ec0e24206e37efc6d9fb8b6da926c2d8b",
+      "size": 4247
+    },
+    {
+      "path": "public/judge/judge2.py",
+      "sha256": "4504d5e9aef9823b351e1108e93ea48285dcbe9eb2874370f00aa7f15d4397e0",
+      "size": 29628
+    },
+    {
+      "path": "public/judge/judge4.py",
+      "sha256": "9bd45ec6372914900d0b86dd3030aaeef94a3581f4a113143bfe409891d63c9b",
+      "size": 39780
+    },
+    {
+      "path": "public/maps4/manifest.json",
+      "sha256": "added92c7a0d12d6726bb9c5496ed1d57e86837f8a035eb91768ba7fe65bf595",
+      "size": 238935
+    },
+    {
+      "path": "public/maps4/public4-01.txt",
+      "sha256": "e161773fe80c1c4c61e849e8aec5fc89a2a7085237976bf92e54948a6153ce00",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-02.txt",
+      "sha256": "52f8edd99c204f7e8005c8bb5c74b178b387f3f88283fbca9063c317fa8fae56",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-03.txt",
+      "sha256": "cc4bb549c562678080bc3b571841951cf6bca6d3ab73f1f90b3cd4eb164f50ec",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-04.txt",
+      "sha256": "b0aa46a57dcc163411994a00d24a8c0441fa818bcc3c9b124155dc2ace66e190",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-05.txt",
+      "sha256": "1f931285a59f1176cafd4b73c3e5da1e76189ef288f480683c88ea48ebc0be33",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-06.txt",
+      "sha256": "2c610bd1be41eb6196bd2ef968944585b4a4e6cd77a74824bd332201b2119d1c",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-07.txt",
+      "sha256": "6f613dfdd6b36bd938926e83053a1ab1c96eace002f1d490043f6d33210ffc0b",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-08.txt",
+      "sha256": "f50f361d294d4b8039c12acf938a80917b648932271fd3eb31a90df3598c28be",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-09.txt",
+      "sha256": "a022f9ff781fa9ba6bfca9b14224ba6291bb2c4f119ee4068696ed26dd1775f5",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-10.txt",
+      "sha256": "e366b6ce1aa90efd335fddbc42b1f2badbcca1555152711dd1325e2fbcf4b621",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-100.txt",
+      "sha256": "4b052cab6daf9d41423f697a669ba795cc68e872c477003422c50c68d140ec96",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-101.txt",
+      "sha256": "78eabc24bc076d5d51be395d3574e2d715f01dade2c07baae3b6d957eb1076bd",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-102.txt",
+      "sha256": "7aa3d94fe875eb6fb8ff2dd7eb076df57dab1142de21e37565656e53df80ab3f",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-103.txt",
+      "sha256": "ae39a3ef4c347c02accdb455062204f0950e5f93a4b00807fc44b79fa4075563",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-104.txt",
+      "sha256": "cea4f84f41071f20b6271995ddb478621e179dab22cd0536b22b4356dd5275f6",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-105.txt",
+      "sha256": "dac049c13b1c055bc8cbee8333630368d40f6e9a4e92e27e3db63ef59c490e33",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-106.txt",
+      "sha256": "ec3be5d6f9d39d04e6fa6d0f32a51eb3e91488922764ff28d0f41dfed8fa1a8d",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-107.txt",
+      "sha256": "e102a64650d48a8f1b4fb9d8f0912766e1458a3c657439d2d9d8203e7b19264e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-108.txt",
+      "sha256": "c7090a0941eb9cfde7f14734ca9e535e1d48cc73acc3b4b9415b24f372e2ed5a",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-11.txt",
+      "sha256": "eb8633bab1ae15db05d315775009c836c09987344dbec4608cc436d936d9829f",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-12.txt",
+      "sha256": "6a864862f9b90014fa9807573892ec110e1b760b8f56f074a01bd0e9d7253704",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-13.txt",
+      "sha256": "e01087edf5d691ce24aaf970402fdb8afa3208ebae18f36ebd80dc0b920538c8",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-14.txt",
+      "sha256": "c63b4a3d134ff61c87b8d34c2e4f4ec1aca16a5702f1daf2cde641bb3a6dd683",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-15.txt",
+      "sha256": "ba6126f1609818bfb741105a8b05c354bb8147819d52ba942d6a6f65123d6593",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-16.txt",
+      "sha256": "d840053db80c9d545ce650cefc78609150b3c81d6181acf47aec386e7a16b561",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-17.txt",
+      "sha256": "b759f4b07f2b9e92e04f1f498e08613f22664d1d81b3ecd14e42e9a8d36aa850",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-18.txt",
+      "sha256": "09286d91c2f97cdc574a39ccda5524df5f12faedea90b342f17bfcc1b4d05b93",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-19.txt",
+      "sha256": "5a2bf87b03ddd97761e786e335735839ad0f2c381915f67193641c580150baa9",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-20.txt",
+      "sha256": "698e1a641ef5a589beeb543b337bce3d8dc60ed29f9251c97bc615f4271eaa9a",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-21.txt",
+      "sha256": "0540aa6ad9d38a7fcc6fe6baa6ba0547c8950db05bd38e0b256febf4e154bce0",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-22.txt",
+      "sha256": "358345fe83a1b9d894aef4ae809c97e8b99e6a9fd0cc5cc39420326fa82a75ac",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-23.txt",
+      "sha256": "00a1759209fafca9ecc750510ceb52a1d9b58848dc5d19653628201f114e16a5",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-24.txt",
+      "sha256": "27a1259e33bae08edb3a5a5121eb5da5dc0103cb8bcde77d6bb12294daff2c80",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-25.txt",
+      "sha256": "f851e49b5f6c83cea6ec3d145627730d41400e1333db2ebee7b37ecaf1a64d91",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-26.txt",
+      "sha256": "da3694d396582e91b891acb9033800d4c5b9fa08a611fdcdeeed8f5544713ac8",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-27.txt",
+      "sha256": "f81f1076c3f5e86a7e88e67423745f0086148bd8c58405803d8af1a0f12b426f",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-28.txt",
+      "sha256": "d9274d2076e7d901dc0c1955191579fcbe69aee8216d3d20e6460ea7e3ea428e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-29.txt",
+      "sha256": "8ed765b5a3fe8581328a891bdf4ba9adab7567834088eea9575d91eadce9c5c3",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-30.txt",
+      "sha256": "2fc0c8993fb8a5e2ccc5862c4cdf7a9c4868c8da1eb98dff9bfb3f0a8ca9561e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-31.txt",
+      "sha256": "4165c6a6da55e282f3e98034d1cdda55de2f100d29d38c5fb492406c84c39647",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-32.txt",
+      "sha256": "73a44b8b814a004725d33e413437b9bd36aa27457f53534f73bdf8332f0a9b51",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-33.txt",
+      "sha256": "685ba8972838ae666c517bedba9a9ac6e975e38bff8a9a2d95240316034bca5d",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-34.txt",
+      "sha256": "9adda188eb3b01e6acd35eb1fde378cdad5b1704921d6765f157fbf8b67c0b6e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-35.txt",
+      "sha256": "d5b8e444e526a1c247ebb0a816d650d23c89de876e2c2886d52a2a3167198563",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-36.txt",
+      "sha256": "d4a3d62f9b2ad35e4c4b823c7da663b6eb3e9ea0386bdaf3bb2ef819c3c4e6d2",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-37.txt",
+      "sha256": "e9ceb1f2f427fd92faca3950a431ce52a94ae66bf47d3335a0e39536f0835749",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-38.txt",
+      "sha256": "2a70153fb37e2c6a7aafdf026621a3ce6419f3f93351a6ed0749fcc8f395ee50",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-39.txt",
+      "sha256": "19e91552cecbcf94d0580f31f6c9942cb06c10450ce3dc7825086ec337d8177e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-40.txt",
+      "sha256": "009f07468a689a2a32a6391a9c6cab41f9895ad437cc11a85a19fd3f7eab969d",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-41.txt",
+      "sha256": "0589d710684c355fc2523b71021c57e35d2e55ebf48cc2826a037d0319cbcd85",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-42.txt",
+      "sha256": "8109b287ba782a964f1181aa5d2bb00df2835b3e02c5502a1b54ee126389bedc",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-43.txt",
+      "sha256": "ba44b7ad753750c33f0fdb279a9371a8e39a9a35cb6bad852743c20f12a6bd54",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-44.txt",
+      "sha256": "c69ae33df142968490dcb69a3356a080a20578bdbb11a17c71dbafb028a27e12",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-45.txt",
+      "sha256": "8fb0a86bfcaebae01f2ace8ac9b0369c3a5e6cd11158e3dd0894da7429dee658",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-46.txt",
+      "sha256": "1d56e4229b29343c792df82452f08bd78627bf8c2cfffab465b6e4f5b59ce9f6",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-47.txt",
+      "sha256": "725b7838830036668b814c73609639d3cf4f0544d0e4fc2bf1cdf0c5776bd2d7",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-48.txt",
+      "sha256": "cefcd523a8d135f780574907f98050306a642cdf23f041d3d771c006b4239e29",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-49.txt",
+      "sha256": "3b42b284141149bf284bfd8b88db2f4e41f781ed34a8f5d663858bf679e00dc1",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-50.txt",
+      "sha256": "cab298fef7eac0e51f9ef7fcaeb8ab9354f9448c314f9b59bffa4d40e44dba6b",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-51.txt",
+      "sha256": "75dcc629b2311d7b2bdfc2be9081ea78e088c8321ac7843b5ee05dfbc2289580",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-52.txt",
+      "sha256": "e0bd8ba15dc9bb062188dde98d96426aa6b31eacd3ecebe369505b56eb45d40d",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-53.txt",
+      "sha256": "e21c469a063984d08098a83c3951f2928f97c68cfcc90cde19ad8633058d97e9",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-54.txt",
+      "sha256": "a141178af8cfe6a8cea36c40c12615df6857025b3487bc82a8c766d422f9461e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-55.txt",
+      "sha256": "97fa30be066a7763fb3831ac70aad8c4e47b22031638a638fbb490dcb1c5b8a3",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-56.txt",
+      "sha256": "f3395930a2b7b2bab13ec8bc9bed3286a3c7cc587975c2df6af75e069d1e6ebb",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-57.txt",
+      "sha256": "7d5923afdf4c9acd9f8475e46f639fcef20998bdfa4b7d4716d142ee2fe493a7",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-58.txt",
+      "sha256": "c13b0ea32ce44f9817ab0298816826c8cf6c48b821dfce45955c991244b1d233",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-59.txt",
+      "sha256": "b74175d31e50586a34976f7f7ed9bf92fc0509166273d4ff70ea119af7b51837",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-60.txt",
+      "sha256": "b5789d47a69f074a64437176cda520f36c85b0cea99871e6695fafa91c654c44",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-61.txt",
+      "sha256": "4bc0c1da03b75e9efe540eb867d71e713ca7ae05b2bd8b35940e0ca62fbe2709",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-62.txt",
+      "sha256": "94d0f755d7b22639a2e033a0a550d1180ab02a51bec6224932b1878a03339b85",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-63.txt",
+      "sha256": "7a297cac1f246cf95824dbfa26b686b9687b7e0b4f700309362ab2eda32366f4",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-64.txt",
+      "sha256": "0a2e01a5e66f93e84305c2195d772f63d7a246896d44e368d17ec7c8da54d391",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-65.txt",
+      "sha256": "6eb14764a05a1243bdbf014c96f298bf2b37e9ad156d0b7aa36313d196026252",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-66.txt",
+      "sha256": "d51219ab39e032015331e58fc9171d1e31e3c84034d0612a6e4a5e96a59feb6e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-67.txt",
+      "sha256": "ec2e722928d61e7ff58f02b6591acbd8a22400c33f254cdc3ec74b8174c7b90d",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-68.txt",
+      "sha256": "af10012f20c7850c93460b9517dd0633df756bdbe88baef13bfbbee2c13817e7",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-69.txt",
+      "sha256": "d3dab8b21f8839c5d75c27cdfd97658d966e47c36d6932b60679f270d4a69274",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-70.txt",
+      "sha256": "78c96a028817632af35e4ab3c0c574ef3c9e8b1b7d1b458cbca40d6f515cd0a4",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-71.txt",
+      "sha256": "6e777cac8da4c0e7c2b6925caa3e721550daafb6356e99278ac87d05e076eac0",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-72.txt",
+      "sha256": "eb86e18f3ce692311cefd324cd0baa8159d52bea02ac97f645bf8f715e1a5eed",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-73.txt",
+      "sha256": "583882e9c8f1727632c50ab063bbed259a997c02ee4fb8140629d7993648aa3f",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-74.txt",
+      "sha256": "39018b5aa8a7620a26f44b03941a4738dc201985dadc2ca8cd002cc6f6149e7c",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-75.txt",
+      "sha256": "24e73ab7d5e77f0ba3921f9aa17eaa75e94a24959cde930bc37a2e444a269548",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-76.txt",
+      "sha256": "1b4bad7adaf28090ee48edd453221b90fa7ee57366b8a7fd80b18d3e97202622",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-77.txt",
+      "sha256": "62bb31f35f2f34c0bd4942b3a6e8135c7df2bf9b39843a2d54f601f19ea85880",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-78.txt",
+      "sha256": "795c77e94444ddd82e8482fbc2244f94188d87da9109affe5c6df6c909b25b92",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-79.txt",
+      "sha256": "1e54fca45c74cf5a59ea6268bbb2b3c6c026b888b948750bc7afdc80d9950a80",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-80.txt",
+      "sha256": "8301d3fccb630e05008457d682547dd859db8606f47af7df495efec0c51bfa5e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-81.txt",
+      "sha256": "0c01c35d5f050ed039ad67e49e1a4e67d988b77b28da652a24ab5dfb5348fec8",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-82.txt",
+      "sha256": "a7a4e628505cc7d90314895175e7c1556796b518cfa81824906f3c0da4c71d3a",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-83.txt",
+      "sha256": "20b175e724ca597d39b2d0896988f43f8d92e08a14b7aaa8ddd639d6a0d49c20",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-84.txt",
+      "sha256": "179c7d0c8cfbb6b4e1d9b32c6d14fbcebd56c0610896b109d8501d6bf917aa6c",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-85.txt",
+      "sha256": "7f17ab7a7da00688c5eda32a59b664b926108b2711b5339b6d96377e780e4ab6",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-86.txt",
+      "sha256": "d4fd9d540352629f0c291b2df061efc3deadfa816f7ca3df03cc531a414258ca",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-87.txt",
+      "sha256": "cc6a4c107ca8c619e54fe9e116f04f8df057fd651c3934348529b68d7e89888a",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-88.txt",
+      "sha256": "95d80801dae26872fe7aaddaea90e3374372f28d75154d59ca4e0d633de65a82",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-89.txt",
+      "sha256": "7c6467b479828fd51240bf643eab5214ff0252d3b77cbef65fdc72c5e65020e0",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-90.txt",
+      "sha256": "554f5d3d2a622381789ef934807300491df8231fa4adff53723ca3c6cedd1751",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-91.txt",
+      "sha256": "a72e245cb2db5fe8bbc2cd2ce704d1246483ac483fe1318716386cad1700c3f1",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-92.txt",
+      "sha256": "53618117a02c6d2a1f60eee7005901ea2960de33ba9bddc8a6086b92d28e352e",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-93.txt",
+      "sha256": "0f8a5915c657c2755b7b8e44288c5bd904721af71fad09e36c52575fa5f1c5db",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-94.txt",
+      "sha256": "de7021c0db56fea4e69f26156a20f8816a3ace46a27b5c68e75767331bbad735",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-95.txt",
+      "sha256": "abf1423a81b2c73ac0747e11c2652195068c292ebfceb4ab56e413d535e55810",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-96.txt",
+      "sha256": "4a006f7a0733b1e6b6cc6f654aed96058282313f724ae9740edc5f6969584bec",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-97.txt",
+      "sha256": "b6ea6ded6977aef3fa707036e57355e6b4b5860343d9fa09a0bebeaf2ce2d116",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-98.txt",
+      "sha256": "7933c4477f60308e954355ad088652064c9e71137c43c8a05e12e81b6795d0c0",
+      "size": 5238
+    },
+    {
+      "path": "public/maps4/public4-99.txt",
+      "sha256": "ee2c3d83119d9abd1fdc06bcc8b944c66a44e7b587e3de073ef99fd6bfcc70d2",
+      "size": 5238
+    },
+    {
+      "path": "public/oracle/README.md",
+      "sha256": "04fcf626ed5ef5c90528566bfa2ab55cb69165d30ddffd35ad78f68a2d9860e5",
+      "size": 4284
+    },
+    {
+      "path": "public/oracle/oracle.cpp",
+      "sha256": "2770c47c4ece117986d921b7793d88ab511ce5dde6d447184a2fa34c4e901de5",
+      "size": 11480
+    },
+    {
+      "path": "public/template4.cpp",
+      "sha256": "127f5126019ca4b373aac1182a605e759c4e5479d1b5226a5575d021c6951f1c",
+      "size": 2436
+    },
+    {
+      "path": "public/tools/selfcheck4.py",
+      "sha256": "4cdfda0da75ee49dca95f97d625a8cad15fa5c9e69eb8bf83042b92c24acd328",
+      "size": 11601
+    },
+    {
+      "path": "public/tools/timebudget.py",
+      "sha256": "ca71d0fc63cbcadbce3e15b789f115fef698f388c5e9ed1a03bff34e7c389e07",
+      "size": 6266
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "shift": 0,
+    "games": 96,
+    "wins_by_seat": [
+      33,
+      5,
+      8,
+      50
+    ],
+    "wins_by_geom": [
+      33,
+      5,
+      8,
+      50
+    ]
+  },
+  {
+    "shift": 1,
+    "games": 96,
+    "wins_by_seat": [
+      39,
+      37,
+      7,
+      13
+    ],
+    "wins_by_geom": [
+      37,
+      7,
+      13,
+      39
+    ]
+  },
+  {
+    "shift": 2,
+    "games": 96,
+    "wins_by_seat": [
+      5,
+      45,
+      36,
+      10
+    ],
+    "wins_by_geom": [
+      36,
+      10,
+      5,
+      45
+    ]
+  },
+  {
+    "shift": 3,
+    "games": 95,
+    "wins_by_seat": [
+      5,
+      4,
+      51,
+      35
+    ],
+    "wins_by_geom": [
+      35,
+      5,
+      4,
+      51
+    ]
+  }
+]

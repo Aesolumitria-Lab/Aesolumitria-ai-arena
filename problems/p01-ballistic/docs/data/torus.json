@@ -1,0 +1,30 @@
+[
+  {
+    "case": "line",
+    "games": 96,
+    "seat_pct_by_geometry": [
+      45.8,
+      16.7,
+      13.5,
+      24.0
+    ],
+    "spread": 32.3,
+    "drown": 0,
+    "shifts": 4,
+    "seeds": 24
+  },
+  {
+    "case": "ring",
+    "games": 96,
+    "seat_pct_by_geometry": [
+      33.3,
+      12.5,
+      11.5,
+      42.7
+    ],
+    "spread": 31.2,
+    "drown": 0,
+    "shifts": 4,
+    "seeds": 24
+  }
+]

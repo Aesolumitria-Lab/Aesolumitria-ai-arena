@@ -1,0 +1,85 @@
+{
+  "maps": [
+    "public4-01",
+    "public4-02",
+    "public4-03",
+    "public4-04",
+    "public4-05",
+    "public4-06",
+    "public4-07",
+    "public4-08",
+    "public4-09",
+    "public4-10",
+    "public4-100",
+    "public4-101"
+  ],
+  "reference": {
+    "hard": 44.27,
+    "normal": 39.81,
+    "easy": 15.34,
+    "random": 0.52
+  },
+  "n_reference": 1728,
+  "designs": {
+    "A 24 perms x 1 seed": {
+      "games_per_map": 24.0,
+      "win_pct": {
+        "hard": 45.14,
+        "normal": 41.32,
+        "easy": 13.19,
+        "random": 0.35
+      },
+      "dev_pp": {
+        "hard": 0.87,
+        "normal": 1.51,
+        "easy": -2.15
+      },
+      "max_dev_pp": 2.15
+    },
+    "B 24 perms x 2 seed": {
+      "games_per_map": 48.0,
+      "win_pct": {
+        "hard": 44.79,
+        "normal": 41.49,
+        "easy": 13.37,
+        "random": 0.35
+      },
+      "dev_pp": {
+        "hard": 0.52,
+        "normal": 1.68,
+        "easy": -1.97
+      },
+      "max_dev_pp": 1.97
+    },
+    "C 4 cyclic x 6 seed": {
+      "games_per_map": 24.0,
+      "win_pct": {
+        "hard": 53.47,
+        "normal": 24.65,
+        "easy": 21.18,
+        "random": 0.69
+      },
+      "dev_pp": {
+        "hard": 9.2,
+        "normal": -15.16,
+        "easy": 5.84
+      },
+      "max_dev_pp": 15.16
+    },
+    "D 6circ x4rot x 1 seed": {
+      "games_per_map": 24.0,
+      "win_pct": {
+        "hard": 45.14,
+        "normal": 41.32,
+        "easy": 13.19,
+        "random": 0.35
+      },
+      "dev_pp": {
+        "hard": 0.87,
+        "normal": 1.51,
+        "easy": -2.15
+      },
+      "max_dev_pp": 2.15
+    }
+  }
+}

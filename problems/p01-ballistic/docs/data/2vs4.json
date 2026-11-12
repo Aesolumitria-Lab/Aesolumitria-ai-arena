@@ -1,0 +1,24 @@
+{
+  "legacy_maps": 3,
+  "maps4_maps_total": 108,
+  "two_seat": {
+    "games": 24,
+    "seat_counts": [
+      0,
+      24
+    ],
+    "note": "judge.play_match: each seed = a 2-game match with seat swap"
+  },
+  "four_seat": {
+    "games": 575,
+    "seat_share": [
+      38.4,
+      6.3,
+      7.0,
+      48.3
+    ],
+    "draws": 1,
+    "multi_seat_maps": 12,
+    "of_maps": 12
+  }
+}
